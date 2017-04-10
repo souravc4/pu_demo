@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>ray</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	<script src="script/app.js"></script>
+	<script src="script/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/angular-clock.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet"> 
+	<script src="script/angular-clock.min.js"></script> 
 </head>
-<body>
-<h1>
-	test
-</h1>
+<body ng-app="nApp">
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-default center" role="navigation">     
+			<div class="container"> 
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="nav navbar-nav">
+						<li class="headmenu" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#/"><span class="navitem">World Clock</span></a></li>
+						<li class="headmenu" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#ngen"><span class="navitem">Name Generator</span></a></li>
+						<li class="headmenu" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#ptest"><span class="navitem">Personality Test</span></a></li>
+					</ul>
+				</div>  
+			</div>
+		</nav>
+	</div>
+
+	<div ng-view class="container jumbotron"></div>
+
+
 </body>
 </html>

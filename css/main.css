@@ -1,0 +1,120 @@
+body{
+	background-color: #eee;
+	background: url(../images/back1.jpg);
+	background-position:center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*navbar*/
+.navbar{
+	margin-top: 6px;
+	/*margin-bottom: 30px;*/
+	background-color: rgba(160, 218, 192, 0.9);
+	border-width: 0px;
+	border-radius: 6px;
+}
+/*@media only screen and (max-width: 768px) {
+	.navbar{
+		border-radius: 4px;
+		margin-bottom: 12px;
+	}
+}*/
+.navitem{
+	font-size: 22px;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+#mainNavbar{
+	text-align: center;
+}
+.nav {
+	  float: none;
+    display:inline-block;
+    vertical-align: top; 
+}
+.activeX{
+	background-color: grey;
+}
+/*digital clock theme*/
+.widget-clock.blue-light .digital {
+  text-align: center;
+}
+.widget-clock.blue-light .time {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.0em;
+  color: #e3d6d6;
+}
+/*analog(obsidian) theme*/
+.widget-clock.obsidian .clock-face {
+  stroke: rgb(46, 164, 111);
+  fill: none;
+}
+.widget-clock.obsidian .minor {
+  stroke: #0089ff;
+  stroke-width: 0.5;
+}
+.widget-clock.obsidian .major {
+  stroke: rgba(160, 218, 192, 1);
+  stroke-width: 0.5;
+}
+.widget-clock.obsidian .hour {
+  stroke: rgba(119, 176, 242, 0.97);
+  stroke-width: 1;
+}
+.widget-clock.obsidian .minute {
+  stroke: #0089ff;
+  stroke-width: 0.75;
+}
+.widget-clock.obsidian .second,
+.widget-clock.obsidian .second-counterweight {
+  stroke: rgb(234, 31, 54);
+  stroke-width: 0.5;
+}
+.widget-clock.obsidian .second-counterweight {
+  stroke-width: 1.5;
+}
+
+/*main*/
+.jumbotron{
+	background-color: transparent;
+	padding: 0px;
+}
+/*world.htm*/
+.btn-lg{
+	background-color: #7d0101;
+	color: #5ae72d;
+	border-width: 0px;
+}
+.col-sm-3{
+	background-color: rgba(46, 95, 151, 0.65);
+	height: 100px;
+	text-align: center;
+	padding-top: 28px;
+	border-radius: 60px;
+}
+.col-sm-6{
+	min-width: 20em;
+	min-height: 32.8em;
+}
+.side{
+	margin-top: 160px;
+}
+/* show and hide transitions */
+.croc{
+	transition: all linear 0.5s;
+	background-color: rgba(197, 19, 19, 0.75);
+	border: 2px solid black;
+	border-radius: 120px;
+	position: relative;
+	margin: auto;
+}
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:0px;
+  left:0px;
+}

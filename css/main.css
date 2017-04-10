@@ -1,7 +1,6 @@
 body{
 	background-color: #eee;
 	background: url(../images/back1.jpg);
-	background-position:center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -38,6 +37,9 @@ body{
 }
 .activeX{
 	background-color: grey;
+}
+.activeY{
+	background-color: gold;
 }
 /*digital clock theme*/
 .widget-clock.blue-light .digital {

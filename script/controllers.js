@@ -9,14 +9,6 @@ app.controller("worldCtrl", function ($scope, $timeout) {
 	}
 	var liarray = document.getElementsByClassName("headmenu");
 	liarray[0].className += " activeX";
-
-	function mOver(ele) {
-		ele.className += " activeY";
-	}
-
-	function mOut(ele) {
-		ele.className = ele.className.replace( /(?:^|\s)activeY(?!\S)/g , '' );
-	}
 });
 
 app.controller("nameCtrl", function ($scope) {

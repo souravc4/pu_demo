@@ -1,0 +1,31 @@
+<div class="jumbotron">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Random Name Generator</h2></div>
+			<div class="panel-body"><h4></h4></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-4">
+			<div class="form-group">
+				<label for="lang">Select language:-</label>
+				<select ng-model="selectedLang" ng-options="x for x in languages" id="lang" class="form-control">
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="form-group">
+				<label for="alpha">Starting letter:-</label>
+				<input ng-model="letter" type="text" class="form-control" id="alpha" required>
+			</div>
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+	<div class="generator">
+		<button type="button" class="btn btn-primary" ng-click="gen()">Generate</button>
+	</div>
+	<div class="output">
+		<h4 ng-bind="name" id="rname"></h4>
+	</div>
+</div>

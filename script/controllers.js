@@ -7,11 +7,34 @@ app.controller("worldCtrl", function ($scope, $timeout) {
 			$scope.toggle = false;
 		}, 710);
 	}
-	var liarray = document.getElementsByClassName("headmenu");
-	liarray[0].className += " activeX";
+	/*var liarray = document.getElementsByClassName("headmenu");
+	liarray[0].className += " activeX";*/
 });
 
 app.controller("nameCtrl", function ($scope) {
-	/*$scope.msg = "I love London";*/
+	$scope.languages = ["English", "Indian", "Chinese", "Spanish","German"];
+	$scope.gen = function(){
+		$.getJSON('data.json', function(data) {
+			var i,j,n;
+			function randInteger(min,max){
+				return Math.floor(Math.random()*(max-min+1))+min;
+			}
+			if($scope.selectedLang=="English"){
+				var names = data.english;
+				var array = [];
+				j=0;
+				for(i=0;i<100;i++)
+				{
+					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
+					{
+						array[j] = names[i];
+						j++;
+					}
+				}
+				n = randInteger(0,(array.length)-1);
+				$('#rname').html(array[n]);
+			}
+		});
+	};
 });
 

@@ -1,6 +1,6 @@
 body{
 	background-color: #eee;
-	background: url(../images/back1.jpg);
+	background: url(../images/back.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -81,10 +81,7 @@ body{
 }
 
 /*main*/
-.jumbotron{
-	background-color: transparent;
-	padding: 0px;
-}
+
 /*world.htm*/
 .btn-lg{
 	background-color: #7d0101;
@@ -93,9 +90,9 @@ body{
 }
 .col-sm-3{
 	background-color: rgba(46, 95, 151, 0.65);
-	height: 100px;
+	height: 80px;
 	text-align: center;
-	padding-top: 28px;
+	padding-top: 18px;
 	border-radius: 60px;
 }
 .col-sm-6{
@@ -120,4 +117,24 @@ body{
   background-color: transparent;
   top:0px;
   left:0px;
+}
+/* --------------------------  */
+/* --------Name Generator----  */
+/* --------------------------  */
+.jumbotron{
+	background-color: rgba(84, 87, 113, 0.8);
+}
+.panel-heading, .panel-body, .generator, .output{
+	display: flex;
+	justify-content: center;
+}
+.output{
+	margin-top: 3em;
+}
+label{
+	color: white;
+}
+.output h4{
+	font-size: 30px;
+	color: gold;
 }

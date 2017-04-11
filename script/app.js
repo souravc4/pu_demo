@@ -6,11 +6,7 @@ app.config(function($routeProvider) {
         controller : "worldCtrl"
     })
     .when("/ngen", {
-        templateUrl : "name.html",
+        templateUrl : "name.htm",
         controller : "nameCtrl"
-    })
-    .when("/ptest", {
-        templateUrl : "personality.htm",
-        /*controller : "parisCtrl"*/
     });
 });

@@ -1,16 +1,15 @@
 <div class="jumbotron">
-	<div class="row">
+	<div class="row head">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h2>Random Name Generator</h2></div>
-			<div class="panel-body"><h4></h4></div>
+			<div class="panel-heading"><h2>Random First Name Generator</h2></div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row option">
 		<div class="col-xs-2"></div>
 		<div class="col-xs-4">
 			<div class="form-group">
 				<label for="lang">Select language:-</label>
-				<select ng-model="selectedLang" ng-options="x for x in languages" id="lang" class="form-control">
+				<select ng-model="selectedLang" ng-options="x for x in languages" id="lang" class="form-control"><optgroup></optgroup>
 				</select>
 			</div>
 		</div>
@@ -23,9 +22,9 @@
 		<div class="col-xs-2"></div>
 	</div>
 	<div class="generator">
-		<button type="button" class="btn btn-primary" ng-click="gen()">Generate</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="gen()">Generate</button>
 	</div>
 	<div class="output">
-		<h4 ng-bind="name" id="rname"></h4>
+		<h2 ng-bind="name" id="rname"></h2>
 	</div>
 </div>

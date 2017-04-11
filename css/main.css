@@ -84,8 +84,7 @@ body{
 
 /*world.htm*/
 .btn-lg{
-	background-color: #7d0101;
-	color: #5ae72d;
+	
 	border-width: 0px;
 }
 .col-sm-3{
@@ -123,18 +122,33 @@ body{
 /* --------------------------  */
 .jumbotron{
 	background-color: rgba(84, 87, 113, 0.8);
+	min-height: 40em;
+}
+.head{
+	margin-bottom: 2em;
+}
+.head h2{
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
 }
 .panel-heading, .panel-body, .generator, .output{
 	display: flex;
 	justify-content: center;
 }
+label{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+.generator{
+	margin-top: 2em;
+}
 .output{
 	margin-top: 3em;
 }
-label{
-	color: white;
-}
-.output h4{
-	font-size: 30px;
+#rname{
+	font-size: 56px;
 	color: gold;
+	font-family: 'Alegreya', serif;
 }
+

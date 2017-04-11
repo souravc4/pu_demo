@@ -21,9 +21,10 @@ app.controller("nameCtrl", function ($scope) {
 			}
 			if($scope.selectedLang=="English"){
 				var names = data.english;
+				var l = names.length;
 				var array = [];
 				j=0;
-				for(i=0;i<100;i++)
+				for(i=0;i<l;i++)
 				{
 					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
 					{
@@ -32,7 +33,71 @@ app.controller("nameCtrl", function ($scope) {
 					}
 				}
 				n = randInteger(0,(array.length)-1);
-				$('#rname').html(array[n]);
+				$('#rname').html('\"'+array[n]+'\"');
+			}
+			else if($scope.selectedLang=="Indian"){
+				var names = data.hindi;
+				var l = names.length;
+				var array = [];
+				j=0;
+				for(i=0;i<l;i++)
+				{
+					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
+					{
+						array[j] = names[i];
+						j++;
+					}
+				}
+				n = randInteger(0,(array.length)-1);
+				$('#rname').html('\"'+array[n]+'\"');
+			}
+			else if($scope.selectedLang=="Chinese"){
+				var names = data.chinese;
+				var l = names.length;
+				var array = [];
+				j=0;
+				for(i=0;i<l;i++)
+				{
+					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
+					{
+						array[j] = names[i];
+						j++;
+					}
+				}
+				n = randInteger(0,(array.length)-1);
+				$('#rname').html('\"'+array[n]+'\"');
+			}
+			else if($scope.selectedLang=="Spanish"){
+				var names = data.spanish;
+				var l = names.length;
+				var array = [];
+				j=0;
+				for(i=0;i<l;i++)
+				{
+					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
+					{
+						array[j] = names[i];
+						j++;
+					}
+				}
+				n = randInteger(0,(array.length)-1);
+				$('#rname').html('\"'+array[n]+'\"');
+			}
+			else if($scope.selectedLang=="German"){
+				var names = data.german;
+				var l = names.length;
+				var array = [];
+				j=0;
+				for(i=0;i<l;i++)
+				{
+					if(((names[i].charAt(0)).toUpperCase())==(($scope.letter).toUpperCase()))
+					{
+						array[j] = names[i];
+						j++;
+					}
+				}
+				n = randInteger(0,(array.length)-1);
+				$('#rname').html('\"'+array[n]+'\"');
 			}
 		});
 	};

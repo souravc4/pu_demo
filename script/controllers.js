@@ -7,8 +7,9 @@ app.controller("worldCtrl", function ($scope, $timeout) {
 			$scope.toggle = false;
 		}, 710);
 	}
-	/*var liarray = document.getElementsByClassName("headmenu");
-	liarray[0].className += " activeX";*/
+	var liarray = document.getElementsByClassName("headmenu");
+	liarray[0].className += " activeX";
+	liarray[1].className = liarray[1].className.replace( /(?:^|\s)activeX(?!\S)/g , '' );
 });
 
 app.controller("nameCtrl", function ($scope) {
@@ -101,5 +102,8 @@ app.controller("nameCtrl", function ($scope) {
 			}
 		});
 	};
+	var liarray = document.getElementsByClassName("headmenu");
+	liarray[1].className += " activeX";
+	liarray[0].className = liarray[0].className.replace( /(?:^|\s)activeX(?!\S)/g , '' );
 });
 

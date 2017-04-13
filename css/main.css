@@ -1,5 +1,5 @@
 body{
-	background-color: #eee;
+	background-color: #eee; 
 	background: url(../images/back.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -84,8 +84,9 @@ body{
 
 /*world.htm*/
 .btn-lg{
-	
 	border-width: 0px;
+	color: gold;
+	background-color: black;
 }
 .col-sm-3{
 	background-color: rgba(46, 95, 151, 0.65);

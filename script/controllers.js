@@ -8,8 +8,8 @@ app.controller("worldCtrl", function ($scope, $timeout) {
 		}, 710);
 	}
 	var liarray = document.getElementsByClassName("headmenu");
-	liarray[0].className += " activeX";
-	liarray[1].className = liarray[1].className.replace( /(?:^|\s)activeX(?!\S)/g , '' );
+	liarray[0].className += " active";
+	liarray[1].className = liarray[1].className.replace( /(?:^|\s)active(?!\S)/g , '' );
 });
 
 app.controller("nameCtrl", function ($scope) {
@@ -103,7 +103,7 @@ app.controller("nameCtrl", function ($scope) {
 		});
 	};
 	var liarray = document.getElementsByClassName("headmenu");
-	liarray[1].className += " activeX";
-	liarray[0].className = liarray[0].className.replace( /(?:^|\s)activeX(?!\S)/g , '' );
+	liarray[1].className += " active";
+	liarray[0].className = liarray[0].className.replace( /(?:^|\s)active(?!\S)/g , '' );
 });
 

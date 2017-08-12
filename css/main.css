@@ -5,48 +5,43 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: Verdana;
+	font-family: 'Open Sans', sans-serif;
 }
-
 /*navbar*/
 .navbar{
 	margin-top: 6px;
-	/*margin-bottom: 30px;*/
-	background-color: rgba(160, 218, 192, 0.9);
 	border-width: 0px;
-	border-radius: 6px;
+	border-radius: 2px;
+	background: #4B79A1;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/*@media only screen and (max-width: 768px) {
-	.navbar{
-		border-radius: 4px;
-		margin-bottom: 12px;
-	}
-}*/
+.nav.navbar-nav{
+	background-color: none !important;
+}
 .navitem{
 	font-size: 22px;
-	color: black;
-	font-family: 'Raleway', sans-serif;
+	color: #1a0303;
 }
 #mainNavbar{
 	text-align: center;
 }
-.nav {
-	  float: none;
+.nav{
+	float: none;
     display:inline-block;
     vertical-align: top; 
 }
-.activeX{
-	background-color: grey;
+.active{
+	border-bottom: 3px solid #57bd23;
 }
-.activeY{
-	background-color: gold;
+.widget-clock .time{
+	font-family: 'Open Sans', sans-serif !important;
 }
 /*digital clock theme*/
 .widget-clock.blue-light .digital {
   text-align: center;
 }
 .widget-clock.blue-light .time {
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 3.0em;
   color: #e3d6d6;
 }
@@ -85,19 +80,28 @@ body{
 /*world.htm*/
 .btn-lg{
 	border-width: 0px;
-	color: gold;
-	background-color: black;
+	background-color: #9eca9a;
+	transition: background 0.3s;
+}
+.btn-lg:hover{
+	background-color: #afbc34;
+}
+.btn-default.focus, .btn-default:focus{
+	background-color: #afbc34;
 }
 .col-sm-3{
-	background-color: rgba(46, 95, 151, 0.65);
+	background: #093028;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 80px;
 	text-align: center;
 	padding-top: 18px;
-	border-radius: 60px;
+	border-radius: 40px;
 }
 .col-sm-6{
 	min-width: 20em;
 	min-height: 32.8em;
+	padding-top: 0.4%;
 }
 .side{
 	margin-top: 160px;
@@ -105,9 +109,8 @@ body{
 /* show and hide transitions */
 .croc{
 	transition: all linear 0.5s;
-	background-color: rgba(197, 19, 19, 0.75);
-	border: 2px solid black;
-	border-radius: 120px;
+	background-color: rgba(44, 110, 124, 0.8);
+	border-radius: 2px;
 	position: relative;
 	margin: auto;
 }
@@ -122,14 +125,13 @@ body{
 /* --------Name Generator----  */
 /* --------------------------  */
 .jumbotron{
-	background-color: rgba(84, 87, 113, 0.8);
+	background-color: rgba(61, 110, 64, 0.8);
 	min-height: 40em;
 }
 .head{
 	margin-bottom: 2em;
 }
 .head h2{
-	font-family: 'Lato', sans-serif;
 	font-size: 40px;
 }
 .panel-heading, .panel-body, .generator, .output{
@@ -138,11 +140,16 @@ body{
 }
 label{
 	color: white;
-	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 }
 .generator{
 	margin-top: 2em;
+}
+.generator button{
+	background-color: teal;
+}
+.generator button:hover{
+	background-color: #286090;
 }
 .output{
 	margin-top: 3em;
@@ -150,6 +157,5 @@ label{
 #rname{
 	font-size: 56px;
 	color: gold;
-	font-family: 'Alegreya', serif;
 }
 
